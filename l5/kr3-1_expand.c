@@ -5,6 +5,7 @@
 #include <stdio.h>
 
 #define SIZE 255
+
 void expand(char *s, char *t, int len);
 
 int main()
