@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-#define macro_strcpy(s, t) do {         \
+#define macro_strcpy(s, t) do {    \
   char *__ps__ = (s);              \
   char *__pt__ = (t);              \
   while ((*__ps__++ = *__pt__++)); \
