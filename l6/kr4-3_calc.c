@@ -76,7 +76,7 @@ int main()
                 if (op2 != 0.0)
                     push(pop() / op2);
                 else
-                    printf("zero divisor popped");
+                    printf("zero divisor popped\n");
                 break;
             case '%':
                 op2 = pop();
