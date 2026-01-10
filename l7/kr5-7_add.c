@@ -31,6 +31,12 @@ double *sp = vstk;   // Stack pointer
 
 int main(int argc, char *argv[])
 {
+  if (argc < 2)
+  {
+    printf("No arguments passed...\n");
+    return 1;
+  }
+
   char cop[MAXOP];
   double op2;
 
@@ -47,6 +53,9 @@ int main(int argc, char *argv[])
       case '-':
         op2 = pop();
         push(pop() - op2);
+        break;
+      case '*':
+        push(pop() * pop());
         break;
       case '/':
         op2 = pop();
